@@ -76,8 +76,25 @@ function App() {
     console.log(profile.name,profile.age)
   })
 
+  function add (a,b){
+  const result = a+b ;
+  return result 
+  }
+  
+  function sub (a,b){
+    const result = a-b ;
+    return result 
+    }
 
+    function mul (a,b){
+      const result = a*b ;
+      return result 
+      }
 
+      function div (a,b){
+        const result = a/b ;
+        return result 
+        }
   return (
     <div className="App">
       <h1>{heading}</h1>
@@ -85,10 +102,14 @@ function App() {
       <p>Age: {age}</p>
       <p>Verified {verified ==true   ? "yes" :"no"} </p>
       <p>result {add(10,10)}</p>
+      <p>result {add(20,20)}</p>
+      <p>result {sub(20,10)}</p>
+      <p>result {mul(20,20)}</p>
+      <p>result {div(20,30)}</p>
       
     </div>
-  );
+  )
+  ;
 }
-
 export default App;
 
